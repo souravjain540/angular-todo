@@ -1,0 +1,8 @@
+<p>tasks works!</p>
+<ul>
+    <app-task
+      *ngFor="let task of tasks"
+      [task]="task"
+      (completed)="completed.emit($event)"
+    ></app-task>
+  </ul>
